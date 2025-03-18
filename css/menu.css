@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*HEADER STARTS*/
+header {
+  width: 100%;
+  height: 110px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border: 2px solid orange;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#nav-links {
+  display: flex;
+  transition: 0.7s ease;
+  gap: 10px;
+  gap: 30px;
+}
+
+li {
+  padding-top: 55px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(238, 193, 108);
+  position: relative;
+  font-size: 21px;
+}
+
+.link:hover {
+  color: white;
+}
+
+/*HEADER ENDS */
+
+/*MAIN STARTS */
+
+.menu-intro {
+  display: flex;
+  background-color: orange;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.meal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 110px;
+}
+
+.menu-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 11px;
+  flex: 1 1 45%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.large-box {
+  flex: 1 100%;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 6px 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+#wrap-lunch {
+  width: 100%;
+}
+
+#section-dessert {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#section-appetizer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#section-warmdish {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.small-card {
+  flex: 1 1 45%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 6px 10px rgba(0, 0, 0, 0.2);
+  margin: 11px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#hide-btn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 6px 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.small-card:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+/*MENU ENDS */
+
+/*CALCULATION STARTS */
+.menu-intro-calc {
+  display: flex;
+  background-color: rgb(255, 208, 0);
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#calculation {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#calc-btn {
+  height: 35px;
+  width: 160px;
+  font-size: 15px;
+  margin: 15px;
+}
+/*CALCULATION ENDS*/
+
+/*FOOTER STARTS */
+
+.frame-footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.title-footer {
+  color: rgb(238, 193, 108);
+}
+
+.under-title-footer {
+  color: rgb(238, 193, 108);
+}
+
+.info-footer {
+  color: rgb(238, 193, 108);
+  display: flex;
+}
+.follow-us {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.follow {
+  color: rgb(238, 193, 108);
+  display: flex;
+}
+
+.year {
+  color: rgb(238, 193, 108);
+}
+
+/*FOOTER ENDS */
+
+/*CALCULATION STARTS*/
+
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 10%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/*CALCULATION ENDS*/
+
+/*FILTRERING STYLE STARTS */
+#filter-section {
+  margin: 120px;
+  text-align: center;
+}
+
+#category-filter {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/*FILTRERING STYLE ENDS */
+
+/*FLIP CARD STARTS*/
+.menu-card {
+  width: 200px;
+  height: 190px;
+  perspective: 3000px; /* Skapar en 3D-effekt */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Dölj baksidan när kortet är vänd */
+}
+
+.card-front {
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.card-back {
+  background: #f4f4f4;
+  box-sizing: border-box;
+  transform: rotateY(180deg); /* Vänd baksidan */
+  overflow-y: auto; /* Gör baksidan scrollbar om innehållet är för stort */
+  max-height: 200px;
+}
+
+.menu-card.flipped .card-inner {
+  transform: rotateY(180deg); /* Flippar kortet vid klick */
+}
+
+/*FLIP CARD ENDS */
+
+/*MEDIAQUERIES 540px eller mindre*/
+@media screen and (max-width: 540px) {
+  #nav-links {
+    gap: 10px;
+    margin-right: 7px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .logo img {
+    display: none;
+  }
+}

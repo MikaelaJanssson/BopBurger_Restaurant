@@ -1,0 +1,46 @@
+<!-- Bekräftelsesidan (confirmation.html) -->
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bokningsbekräftelse</title>
+    <link rel="stylesheet" href="../css/confirmation.css" />
+  </head>
+  <body>
+    <!--HEADER STARTS -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"><img src="/img/burgerboplog.png" alt="bopburger" /></a>
+        </div>
+
+        <ul id="nav-links">
+          <li><a href="/index.html" class="link">Home</a></li>
+          <li><a href="html/menu.html" class="link">Menu</a></li>
+          <li><a href="../index.html#about" class="link">About</a></li>
+          <li><a href="/html/reservation.html" class="link">Reservation</a></li>
+          <li><a href="/index.html#contact" class="link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--HEADER STOPS-->
+
+    <div class="confirmation-container">
+      <h1>Tack för din bokning!</h1>
+      <p>Vi har tagit emot din bokning. Här är dina bokningsdetaljer:</p>
+
+      <div id="confirmation-details">
+        <p><strong>Namn:</strong> <span id="user-name"></span></p>
+        <p><strong>Datum:</strong> <span id="user-date"></span></p>
+        <p><strong>Tid:</strong> <span id="user-time"></span></p>
+        <p><strong>Antal gäster:</strong> <span id="user-guests"></span></p>
+      </div>
+
+      <p>Vi ser fram emot att träffa dig på BopBurger!</p>
+    </div>
+
+    <script src="/js/confirmation.js"></script>
+  </body>
+</html>

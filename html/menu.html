@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/menu.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Meny</title>
+  </head>
+  <body>
+    <!--HEADER STARTS -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"><img src="/img/burgerboplog.png" alt="bopburger" /></a>
+        </div>
+
+        <ul id="nav-links">
+          <li><a href="/index.html" class="link">Home</a></li>
+          <li><a href="html/menu.html" class="link">Menu</a></li>
+          <li><a href="../index.html#about" class="link">About</a></li>
+          <li><a href="/html/reservation.html" class="link">Reservation</a></li>
+          <li><a href="/index.html#contact" class="link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--HEADER STOPS-->
+    
+    
+    <!-- FILTRERNG AV KATERGORI MENU -->
+    <section id="filter-section">
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="chicken">Chicken</option>
+        <option value="meat">Meat</option>
+        <option value="veggie">Veggie</option>
+        <option value="lunch">Lunch Buffet</option>
+      </select>
+    </section>
+    <!-- FILTRERNG AV KATERGORI MENU -->
+    
+    <!--MENU STARTS-->
+    <main>
+      <!--APPETIZER STARTS-->
+    <section id="secition-appetizer">
+
+      <div class="meal-container">
+        <h1 class="menu-intro">FÖRÄTTER</h1>
+       
+        <div class="menu-card" data-category="veggie">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Mozarella sticks</h3>
+              <p>
+                Mozzarella sticks är krispiga, gyllenbruna oststänger fyllda med krämig, smält mozzarella – en oemotståndlig delikatess! Perfekt att doppa i en smakrik marinara-sås för den ultimata smaken.
+              </p>
+              <br />
+              <p class="price">59kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Innehållsförteckning:
+                Mozzarellaost (mjölk) (60%)
+                Pastöriserad mjölk, mjölksyra, salt, löpe
+                Vetemjöl (20%)
+                Ströbröd (vetemjöl, jäst, socker, salt)
+                Ägg (10%)
+                Vegetabilisk olja (rapsolja eller solrosolja för fritering)
+                Kryddor (vitlökspulver, lökpulver, svartpeppar)Salt
+                Allergeninformation:
+
+                Mjölk (i mozzarellaost)
+                Gluten (i vetemjöl och ströbröd)
+                Ägg
+                Kan innehålla spår av soja.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="chicken">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Chicken Rings</h3>
+              <p>
+                Chicken Rings är krispiga, friterade ringar av saftig kyckling, perfekt kryddade och tillagade för att ge en smakrik och härlig upplevelse. Dessa läckra små bitar av kyckling är det perfekta valet för en snabb och god snack eller som en del av din måltid, ofta serverade med en smakrik dippsås.
+              </p>
+              <br />
+              <p class="price">69kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Kycklingkött (70%) – 100% kycklingbröst, salt, kryddor
+                Vetemjöl – för panering Majsstärkelse
+                Ägg – för att binda och ge krispighet
+                Ströbröd – innehåller vetemjöl, jäst, socker, salt
+                Vegetabilisk olja (rapsolja eller solrosolja) – för fritering
+                Kryddor – t.ex. vitlökspulver, lökpulver, paprika, svartpeppar
+                Salt – för smak
+                Allergeninformation:
+                Gluten (i vetemjöl och ströbröd)
+                Ägg
+                Kan innehålla spår av soja och selleri.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="veggie">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Fries with Cheese</h3>
+              <p>
+                Fries with Cheese är en läcker och krämig rätt som kombinerar spröda, gyllenbruna pommes frites med smält ost. Perfekt som en snack eller ett tillbehör, där den varma osten smälter över de krispiga pommes fritesen och skapar en oemotståndlig smakupplevelse.
+              </p>
+              <br />
+              <p class="price">49kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Pommes frites (70%) – potatis, vegetabilisk olja (rapsolja eller solrosolja), salt
+                Cheddarost (30%) – pastöriserad mjölk, salt, löpe, färgämne(betakaroten)
+                Kryddor – t.ex. vitlökspulver, lökpulver (beroende på variant)
+                Allergeninformation:
+                Mjölk (i cheddarost)
+                Gluten 
+                Kan innehålla spår av soja</p>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="meat">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Smashed Toast</h3>
+              <p>
+                Smashed Toast är en smakrik variant av den klassiska smashed toasten, där rostat bröd toppas med krämig avokado och saftigt kött, såsom rostbiff, kyckling eller bacon. Denna kombination av krispigt bröd, krämig avokado och smakfullt kött gör den till en perfekt måltid eller snack för köttälskare.
+              </p>
+              <br />
+              <p class="price">59kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Rostat bröd (40%) – vetemjöl, jäst, socker, salt
+                Avokado (30%) – mosad avokado, citronjuice
+                Olivolja – för extra krämighet
+                Kött (30%) – t.ex. rostbiff, grillad kyckling eller bacon
+                Kryddor – t.ex. svartpeppar, chiliflakes, vitlökspulver
+                Salt – för smak
+                Tomat (valfritt) – för extra fräschör
+                Allergeninformation:</p>
+
+                Gluten (i bröd)
+                Mjölk (kan förekomma om smör används på brödet)
+                Kan innehålla spår av soja eller ägg (beroende på kötttyp och tillagning)
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--APPETIZER ENDS-->
+
+      <!--WARM DISH STARTS-->
+
+      <section id="section-warmdish">
+
+        <div class="meal-container">
+          <h1 class="menu-intro">VARMRÄTTER</h1>
+         
+          <div class="menu-card" data-category="meat">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Meat Burger</h3>
+                <p>
+                  En Meat Burger är en saftig och smakrik hamburgare med en välkryddad nötköttsbiff, serverad i ett mjukt bröd. Toppad med fräscha grönsaker som sallad, tomat och lök, samt smält ost och en läcker sås, blir denna burger en oemotståndlig måltid för alla som älskar klassiska smaker.
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+              <div class="card-back">
+                <h3>Allergener:</h3>
+                <div>
+                  <p>Nötkött (70%) – 100% nötkött, salt, peppar
+                    Hamburgerbröd (25%) – vetemjöl, jäst, socker, salt, smör
+                    Cheddarost (5%) – pastöriserad mjölk, salt, löpe
+                    Sallad – isbergssallad eller annan sort
+                    Tomat – skivad
+                    Lök – skivad, rå eller karamelliserad (beroende på variant)
+                    Ketchup – socker, vinäger, tomatpuré, kryddor
+                    Senap – senapsfrön, vinäger, socker
+                    Allergeninformation:
+                    
+                    Gluten (i bröd)
+                    Mjölk (i cheddarost)
+                    Ägg (kan förekomma i vissa såser eller bröd)
+                    Kan innehålla spår av soja (beroende på sås eller bröd)
+                    </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="menu-card" data-category="chicken">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Chicken Burger</h3>
+                <p>
+                  En Chicken Burger är en saftig och smakrik hamburgare med en grillad eller friterad kycklingfilé, serverad i ett mjukt bröd. Toppad med krispig sallad, fräsch tomat och en smakfull sås, blir denna burger ett perfekt val för kycklingälskare.
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+              <div class="card-back">
+                <h3>Allergener:</h3>
+                <div>
+                  <p>Kycklingbröst (60%) – 100% kyckling, salt, peppar, kryddor
+                    Hamburgerbröd (25%) – vetemjöl, jäst, socker, salt, smör
+                    Sallad – isbergssallad eller annan sort
+                    Tomat – skivad
+                    Lök – skivad, rå eller karamelliserad (beroende på variant)
+                    Majonnäs – ägg, vegetabilisk olja, vinäger, senap, socker
+                    BBQ-sås – tomatpuré, vinäger, socker, kryddor (beroende på variant)
+                    Allergeninformation:
+                    
+                    Gluten (i bröd)
+                    Ägg (i majonnäs)
+                    Kan innehålla spår av soja och mjölk </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="menu-card" data-category="meat">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Texas Burger</h3>
+                <p>
+                  En Texas Burger är en smakrik och saftig hamburgare som kombinerar den klassiska nötköttsbiffen med BBQ-sås, bacon, smält ost och krispig lök. Toppad med pickles och serverad i ett mjukt bröd, ger denna burger en perfekt balans mellan rökiga, salta och söta smaker – en riktig smakexplosion för burgerälskare.
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+              <div class="card-back">
+                <h3>Allergener:</h3>
+                <div>
+                  <p>Nötkött (60%) – 100% nötkött, salt, peppar, kryddor
+                    Hamburgerbröd (20%) – vetemjöl, jäst, socker, salt, smör
+                    Cheddarost (10%) – pastöriserad mjölk, salt, löpe
+                    Bacon (5%) – rimmat fläskkött, salt, socker
+                    BBQ-sås (5%) – tomatpuré, vinäger, socker, rökarom, kryddor
+                    Pickles – inlagda gurkor
+                    Lök – rå eller karamelliserad
+                    Sallad – isbergssallad eller annan sort
+                    Allergeninformation:
+                    
+                    Gluten (i bröd)
+                    Mjölk (i cheddarost)
+                    Ägg (kan förekomma i vissa såser eller bröd)
+                    Kan innehålla spår av soja (beroende på BBQ-sås och bröd)</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="menu-card" data-category="veggie">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Go Green Burger</h3>
+                <p>
+                  En Go Green Burger är den perfekta rätten för den som älskar fräscha, växtbaserade alternativ. Den är fylld med en smakrik biff gjord på gröna ingredienser som bönor, linser eller ärtor, och serveras i ett mjukt bröd med krispig sallad, avokado, tomat och en lätt dressing. En hälsosam och god burger som ger ett smakrikt alternativ till den klassiska hamburgaren.
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+              <div class="card-back">
+                <h3>Allergener:</h3>
+                <div>
+                  <p>äxtbaserad biff (50%) – bönor, linser eller ärtor, kryddor, havregryn
+                    Hamburgerbröd (25%) – vetemjöl, jäst, socker, salt, smör (kan vara veganskt beroende på bröd)
+                    Avokado (10%) – mosad avokado, citronjuice
+                    Sallad (5%) – isbergssallad eller annan grönsaksblandning
+                    Tomat (5%) – skivad
+                    Vegansk majonnäs eller dressing – vegansk majonnäs, citronjuice, senap, socker
+                    Allergeninformation:
+                    
+                    Gluten (i bröd och växtbaserad biff, beroende på variant)
+                    Kan innehålla spår av soja (i växtbaserad biff eller dressing)</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        <!--WARM DISH ENDS-->
+
+    <!--DESSERT STARTS-->
+
+    <section id="section-dessert">
+
+      <div class="meal-container">
+        <h1 class="menu-intro">EFTERÄTTER</h1>
+       
+        <div class="menu-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Brownie with Cream</h3>
+              <p>
+                En Brownie med Mjukglass är en härlig dessertkombination som förenar den rika och fudgy konsistensen av en nybakad brownie med den krämiga, kalla mjukglassen. Tillsammans skapar de en perfekt balans mellan värme och kyla, sötma och choklad, som gör varje tugga till en njutning.
+
+              </p>
+              <br />
+              <p class="price">99kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Brownie (60%) – vetemjöl, socker, kakao, smör, ägg, vaniljextrakt, bakpulver
+                  Mjukglass (40%) – mjölk, grädde, socker, vaniljextrakt, stabilisatorer (kan variera beroende på variant)
+                  Chokladbitar (valfritt) – choklad, kakaomassa, socker
+                  Allergeninformation:
+                  
+                  Gluten (i brownie)
+                  Mjölk (i mjukglass och brownie)
+                  Ägg (i brownie)
+                  Kan innehålla spår av nötter </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Oreo Shake</h3>
+              <p>
+                En Oreo Shake är en krämig och läskande milkshake som kombinerar den rika smaken av vaniljglass med smulor av den populära Oreo-kakan. Toppad med extra Oreos och en generös mängd vispgrädde, är denna shake en perfekt söt och god treat för alla som älskar choklad och kakor.
+              </p>
+              <br />
+              <p class="price">79kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div> 
+                <p>Vaniljglass (50%) – mjölk, grädde, socker, vaniljextrakt
+                  Oreo-kakor (30%) – socker, vetemjöl, palmolja, kakao, vaniljextrakt
+                  Mjölk (15%) – pastöriserad mjölk
+                  Vispgrädde (5%) – grädde, socker
+                  Allergeninformation:
+                  
+                  Mjölk (i glass, grädde, mjölk)
+                  Gluten (i Oreo-kakor)
+                  Ägg (kan förekomma i glass eller grädde)
+                  Kan innehålla spår av soja och nötter </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Icecream with Fries</h3>
+              <p>
+                Mjukglass med Fries är en oväntad men oemotståndlig kombination av krämig, kall mjukglass och krispiga, varma pommes frites. Den salta smaken från de nyfriterade pommes fritesen balanseras perfekt med den söta, lena mjukglassen – en perfekt snack eller dessert för den som vill ha något annorlunda.
+              </p>
+              <br />
+              <p class="price">79kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Mjukglass (50%) – mjölk, grädde, socker, vaniljextrakt, stabilisatorer (kan variera beroende på variant)
+                  Pommes frites (50%) – potatis, vegetabilisk olja (rapsolja eller solrosolja), salt
+                  Allergeninformation:
+                  
+                  Mjölk (i mjukglass)
+                  Gluten (kan förekomma i pommes frites beroende på tillverkning)
+                  Kan innehålla spår av soja (beroende på tillagningsmetod av pommes fritesen)</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Banana Split Fries</h3>
+              <p>
+                Banana Split Fries är en kreativ och läcker dessert där de klassiska pommes fritesen får en söt twist! Toppade med skivade bananer, vaniljglass, chokladsås och vispgrädde, erbjuder denna rätt en härlig blandning av varmt, krispigt och kallt med en söt och fruktig smak. En perfekt dessert för alla som vill ha något annorlunda och gott.
+              </p>
+              <br />
+              <p class="price">109kr</p>
+            </div>
+            <div class="card-back">
+              <h3>Allergener:</h3>
+              <div>
+                <p>Pommes frites (40%) – potatis, vegetabilisk olja (rapsolja eller solrosolja), salt
+                  Vaniljglass (30%) – mjölk, grädde, socker, vaniljextrakt
+                  Bananer (20%) – skivade
+                  Vispgrädde (5%) – grädde, socker
+                  Chokladsås (5%) – socker, kakao, vatten, vaniljextrakt
+                  Allergeninformation:
+                  
+                  Mjölk (i vaniljglass och vispgrädde)
+                  Gluten (kan förekomma i pommes frites beroende på tillverkning)
+                  Kan innehålla spår av soja och nötter </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+             <!--DESSERT ENDS-->
+
+              
+            <!--LUNCHBUFFÈ STARTS-->
+    
+            <section id="wrap-lunch"> 
+              <!--Knapp för att dölja lunchbuffe-->
+            <button id="hide-btn">Dölj Lunchbuffé</button>
+
+              <div id="section-lunch">  
+                <div class="meal-container">
+                  <h1 class="menu-intro">LUNCHBUFFÈ</h1>
+                  <div class="large-box">
+                    <p>
+                  Lunchen serveras helgfria vardagar måndag-fredag mellan kl.11:30-14:30
+                  Lunchbuffén innehåller alltid 3 hemlagade varmrätter samt 3 såser.
+                  Lunchbuffén ingår även stor salladsbuffé, läsk, vatten, kaffe/te, kaka.
+                  <br><br>
+                  Varmrätterna som serveras på lunchbuffén roterar vi från ordinarie a la carte menyn.
+                  
+                  <br><br>
+                  <p class="price">159kr</p>
+                </div>
+                  
+                </p>
+              </div>
+      
+              <div class="small-card" data-category="lunch">
+                <h2 class="lunch-day">Måndag</h2>
+                <p>
+                Meatburger, en hamburgare med en saftig nötköttsbiff, serverad i ett mjukt bröd och ofta toppad med sallad, tomat, ost och sås. Mozarella sticks, Chicken Rings, Fries with Cheese, Smashed Toast.  
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+      
+              <div class="small-card" data-category="lunch">
+                <h3>Tisdag</h3>
+                <p>
+                  Chicken Burger, en hamburgare med en grillad eller friterad kycklingfilé, serverad i ett bröd med sallad, tomat och sås. Mozarella sticks, Chicken Rings, Fries with Cheese, Smashed Toast.  
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+
+
+              <div class="small-card" data-category="lunch">
+                <h3>Onsdag</h3>
+                <p>
+                Go Green Burger, en hamburgare med en växtbaserad biff, ofta gjord på bönor, linser eller soja, serverad i ett bröd med sallad, tomat och sås. Mozarella sticks, Chicken Rings, Fries with Cheese, Smashed Toast.  
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+
+              <div class="small-card" data-category="lunch">
+                <h3>Torsdag</h3>
+                <p>
+                Chicken Burger, en hamburgare med en grillad eller friterad kycklingfilé, serverad i ett bröd med sallad, tomat och sås. Mozarella sticks, Chicken Rings, Fries with Cheese, Smashed Toast.  
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+
+              <div class="small-card" data-category="lunch">
+                <h3>Fredag</h3>
+                <p>
+                Texasburger, en hamburgare med nötkött, toppad med BBQ-sås, bacon, ost, lök och pickles, ofta serverad i ett mjukt bröd. Mozarella sticks, Chicken Rings, Fries with Cheese, Smashed Toast.  
+                </p>
+                <br />
+                <p class="price">159kr</p>
+              </div>
+
+              <div class="small-card" data-category="lunch">
+                <h3>Extra tillägg</h3>
+                <p>
+                  Extra läsk (Coca-cola, Fanta, Sprite), Sås eller Sidesallad.    
+                </p>
+                <br />
+                <p class="price">29kr</p>
+              </div>
+            </div>
+    </section>
+   
+    <!--LUNCHBUFFÈ ENDS-->
+
+    </main>
+    <br>
+
+    <!--CALCULATION STARTS -->
+    <h1 class="menu-intro-calc">RÄKNA UT DIN SUMMA FÖR BESTÄLLDA RÄTTER</h1>
+    <div id="calculation">
+      <label for="mozarella">Mozarella Sticks (59 kr): </label>
+      <input type="number" id="mozarella" value="0" min="0" />
+  
+      <label for="chickenRings">Chicken Rings (69 kr): </label>
+      <input type="number" id="chickenRings" value="0" min="0" />
+  
+      <label for="friesWithCheese">Fries with Cheese (49 kr): </label>
+      <input type="number" id="friesWithCheese" value="0" min="0" />
+  
+      <label for="smashedToast">Smashed Toast (59 kr): </label>
+      <input type="number" id="smashedToast" value="0" min="0" />
+  
+      <label for="meatBurger">Meat Burger (199 kr): </label>
+      <input type="number" id="meatBurger" value="0" min="0" />
+  
+      <label for="chickenBurger">Chicken Burger(159 kr): </label>
+      <input type="number" id="chickenBurger" value="0" min="0" />
+  
+      <label for="texasBurger">Texas Burger (159 kr): </label>
+      <input type="number" id="texasBurger" value="0" min="0" />
+      
+      <label for="goGreenBurger">Go Green Burger (159 kr): </label>
+      <input type="number" id="goGreenBurger" value="0" min="0" />
+    
+      <label for="brownieWithCream">Brownie With Cream (99 kr): </label>
+      <input type="number" id="brownieWithCream" value="0" min="0" />
+
+      <label for="iceCreamWithFries">Icecream with Fries (79 kr): </label>
+      <input type="number" id="iceCreamWithFries" value="0" min="0" />
+    
+      <label for="oreoShake">Oreo Shake (79 kr): </label>
+      <input type="number" id="oreoShake" value="0" min="0" />
+  
+      <label for="bananaSplitFries">Banana Split Fries (109 kr): </label>
+      <input type="number" id="bananaSplitFries" value="0" min="0" />
+  
+      <label for="lunchBuffe">Lunchbuffé(109 kr): </label>
+      <input type="number" id="lunchBuffe" value="0" min="0" />
+  
+      <label for="extra">Extra tillägg (buffé) (29 kr): </label>
+      <input type="number" id="extra" value="0" min="0" />
+    
+      <button onclick="calculateTotal()" id="calc-btn">Beräkna Totalkostnad</button>
+    
+      <h3>Total kostnad: <span id="totalCost">0</span> kr</h3>
+  </div>
+  
+   <!--CALCULATION ENDS -->
+<br>
+    <!--FOOTER STARTS-->
+
+    <footer id="contact">
+      <div class="frame-footer">
+        <h1 class="title-footer">HOURS & LOCATION</h1>
+      <p class="info-footer">Sankt Eriksgatan 5, 411 05 Gothenburg</p>
+
+      <h2 class="under-title-footer">Hours</h2>
+      <p class="info-footer">
+        Mon-Thu 11-22 |
+        Friday 11-23 |
+        Saturday 12-23 |
+        Sunday 12-22</p>
+
+        <h2 class="under-title-footer">Contact</h2>
+        <p class="info-footer">031-XX XX XXX</p>
+        <a href="info@bopburgers.se" class="info-footer">info@bopburgers.se</a>
+
+        <br>
+
+        <p class="follow">Follow Us!</p>
+
+        <div class="follow-us"> 
+        <i class="fa-brands fa-instagram follow"></i>
+
+        <i class="fa-brands fa-tiktok follow"></i>
+
+        <i class="fa-brands fa-facebook follow"></i>
+        </div>
+
+      <p class="year">&copy; 2025</p>
+
+      </div>
+      
+    </footer>
+
+    <!--FOOTER ENDS -->
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
