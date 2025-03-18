@@ -1,24 +1,16 @@
 window.onload = function () {
-  // Hämta parametrarna
-  const parameter = new URLSearchParams(window.location.search);
-
-  // Fyll i bokning på bekräftelsesidan
-  document.getElementById("user-name").textContent = parameter.get("name");
-  document.getElementById("user-date").textContent = parameter.get("date");
-  document.getElementById("user-time").textContent = parameter.get("time");
-  document.getElementById("user-guests").textContent = parameter.get("guests");
+  let e = new URLSearchParams(window.location.search);
+  (document.getElementById("user-name").textContent = e.get("name")),
+    (document.getElementById("user-date").textContent = e.get("date")),
+    (document.getElementById("user-time").textContent = e.get("time")),
+    (document.getElementById("user-guests").textContent = e.get("guests"));
 };
-
 function validateForm() {
-  const name = document.getElementById("name").value;
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-  const guests = document.getElementById("guests").value;
-
-  // Kontrollerar att alla fält är ifyllda
-  if (!name || !date || !time || !guests) {
-    alert("Vänligen fyll i alla fält.");
-    return false; // Stoppar formuläret från att skickas om false
-  }
-  return true; // Formuläret skickas om alla fält är ifyllda
+  let e = document.getElementById("name").value,
+    t = document.getElementById("date").value,
+    n = document.getElementById("time").value,
+    l = document.getElementById("guests").value;
+  return (
+    (!!e && !!t && !!n && !!l) || (alert("Vänligen fyll i alla fält."), !1)
+  );
 }

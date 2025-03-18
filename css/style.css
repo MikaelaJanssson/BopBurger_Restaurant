@@ -1,189 +1,146 @@
+.link,
+.navbar,
+li {
+  text-decoration: none;
+}
+#right-pic,
+header {
+  background-color: #000;
+  border: 2px solid orange;
+}
+#right-pic,
+.background-pic,
+.video-container,
+header {
+  border: 2px solid orange;
+}
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-/*HEADER STARTS*/
 header {
   width: 100%;
   height: 110px;
-  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  border: 2px solid orange;
 }
-
 .logo img {
   width: 110px;
 }
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  text-decoration: none;
 }
-
 #nav-links {
   display: flex;
-  transition: 0.7s ease;
+  transition: 0.7s;
   gap: 10px;
   gap: 30px;
 }
-
 li {
   padding-top: 55px;
-  text-decoration: none;
   list-style: none;
 }
-
 .link {
-  text-decoration: none;
-  color: rgb(238, 193, 108);
+  color: #eec16c;
   position: relative;
   font-size: 21px;
 }
-
 .link:hover {
-  color: white;
+  color: #fff;
 }
-
-/*HEADER ENDS */
-
-/* VIDEO STARTS */
-
 .video-container {
   position: relative;
   width: 100%;
   height: 60vh;
   overflow: hidden;
   margin-top: 100px;
-  border: 2px solid orange;
 }
-
+.header-text,
+.text-overlay {
+  position: absolute;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #eec16c;
+}
+#left-pic img,
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* TEXT ABOVE VIDEO */
-
 .header-text {
-  position: absolute;
   bottom: 50px;
   left: 20px;
-  color: rgb(238, 193, 108);
   font-size: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
-
-/* VIDEO STARTS */
-
-/*WELCOME-PAGE STARTS */
-
 .background-pic {
   width: 100%;
   height: 490px;
   object-fit: cover;
-  border: 2px solid orange;
   margin-bottom: -4px;
 }
-
 #container-pic {
   display: flex;
   width: 100%;
 }
-
 .text-overlay {
-  position: absolute;
   top: 95%;
   left: 55%;
-  color: white;
-  font-weight: bold;
-  color: rgb(238, 193, 108);
+  font-weight: 700;
   font-size: 25px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
-
 .text-overlay-p {
   font-size: 20px;
-  color: rgb(238, 193, 108);
-  font-weight: bold;
+  color: #eec16c;
+  font-weight: 700;
   padding-right: 40px;
 }
-
-/*WELCOME-PAGE ENDS */
-
-/*INFO-PAGE STARTS */
 #right-pic {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  background-color: black;
   justify-content: center;
   align-items: center;
   padding: 50px;
-  height: 480px;
-  border: 2px solid orange;
 }
-
 #left-pic,
 #right-pic {
   width: 50%;
   height: 480px;
 }
-
-#left-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .info-text {
-  color: rgb(238, 193, 108);
+  color: #eec16c;
   width: 350px;
   font-size: 19px;
 }
-
-/*INFO-PAGE STARTS */
-
-/*GUEST REVIEW STARTS */
-
+.user-name,
+.user-rewiew {
+  color: #000;
+  display: flex;
+}
 .user-image {
-  /*Profile-pictures*/
   width: 150px;
   height: 180px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
-  margin-top: -60px;
-  border: 1px solid black;
+  margin: -60px auto 10px;
+  border: 1px solid #000;
 }
-
-/*REWIEW FRÅN GUEST*/
 .user-name {
-  color: black;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
 }
-
-/*REWIEW FRÅN GUEST*/
-
 .rubrik-quest-rewiev {
   display: flex;
   justify-content: center;
@@ -191,40 +148,33 @@ video {
   font-size: 20px;
   margin-top: 10px;
 }
-
 .user-rewiew {
-  color: black;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5px;
 }
-
 main {
-  background-image: linear-gradient(
-    rgb(165, 118, 57),
-    yellow,
-    rgb(194, 114, 61)
-  );
+  background-image: linear-gradient(#a57639, #ff0, #c2723d);
 }
-
-/*parent-div - bakgrunden*/
 #quest-review {
   display: flex;
   justify-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 10px;
-  background: transparent;
+  background: 0 0;
   justify-content: center;
 }
-
 .card-list-container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-
+.card-list,
+.follow-us {
+  display: flex;
+  gap: 10px;
+}
 .card-item {
   background-color: rgba(255, 255, 255, 0.493);
   width: 250px;
@@ -236,24 +186,15 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 .card-list {
-  display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 }
-
 .user-image {
   display: flex;
   flex-wrap: wrap;
 }
-
-/*GUEST REVIEW ENDS */
-
-/*FOOTER STARTS */
-
 .frame-footer {
-  background-color: black;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,145 +203,93 @@ main {
   height: 300px;
   margin-top: -10px;
 }
-
-.title-footer {
-  color: rgb(238, 193, 108);
-}
-
-.under-title-footer {
-  color: rgb(238, 193, 108);
-}
-
-.info-footer {
-  color: rgb(238, 193, 108);
-  display: flex;
-}
-
-.follow-us {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.follow {
-  color: rgb(238, 193, 108);
-  display: flex;
-}
-
+.title-footer,
+.under-title-footer,
 .year {
-  color: rgb(238, 193, 108);
+  color: #eec16c;
 }
-
-/*FOOTER ENDS */
-
-/*MEDIAQUERIES 540px eller mindre*/
+.follow,
+.info-footer {
+  color: #eec16c;
+  display: flex;
+}
+.follow-us {
+  flex-direction: row;
+}
 @media screen and (max-width: 700px) {
   #nav-links {
     gap: 10px;
     margin-right: 450px;
   }
-
-  .link {
+  .link,
+  .under-title-footer {
     font-size: 18px;
   }
-
   .header-text {
     position: absolute;
     bottom: 50px;
     left: 20px;
-    color: rgb(238, 193, 108);
+    color: #eec16c;
     font-size: 15px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
-
-  .logo img {
+  #quest-review,
+  .logo img,
+  .rubrik-quest-rewiev {
     display: none;
   }
-
   .text-overlay {
     top: 95%;
     left: 45%;
     font-size: 20px;
   }
-
-  .text-overlay-p {
-    font-size: 3px;
-  }
-
   .text-overlay-p {
     font-size: 16px;
   }
-
   .info-text {
-    color: rgb(238, 193, 108);
+    color: #eec16c;
     width: 250px;
   }
-
   #container-pic {
     flex-direction: column;
     align-items: center;
   }
-
   #left-pic,
   #right-pic {
     width: 100%;
   }
-
   #right-pic {
     margin-bottom: 0;
   }
-
-  #quest-review {
-    display: none;
-  }
-
-  #quest-review,
-  .rubrik-quest-rewiev {
-    display: none;
-  }
-
-  /*FOOTER STARTS */
   .title-footer {
-    color: rgb(238, 193, 108);
+    color: #eec16c;
     font-size: 20px;
   }
-
-  .under-title-footer {
-    font-size: 18px;
-  }
-
   .info-footer {
     font-size: 13px;
   }
-  /*FOOTER ENDS */
 }
-
-/*MEDIAQUERIES 912px eller mindre*/
 @media screen and (max-width: 912px) {
   #nav-links {
     gap: 15px;
     margin-right: 467px;
   }
-
   .link {
     font-size: 18px;
   }
-
   .header-text {
     position: absolute;
     bottom: 50px;
     left: 20px;
-    color: rgb(238, 193, 108);
+    color: #eec16c;
     font-size: 15px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
-
   .logo img {
     display: none;
   }
-
   .text-overlay,
   .text-overlay-p {
     top: 95%;
