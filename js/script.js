@@ -7,11 +7,11 @@ const lunchBuffeSection = document.getElementById("section-lunch");
 hideBtn.addEventListener("click", function () {
   // Om sektionen är synlig, döljer vi den
   if (lunchBuffeSection.style.display !== "none") {
-    lunchBuffeSection.style.display = "none"; // Döljer sektionen
-    hideBtn.textContent = "Visa Lunchbuffé"; // Ändra knapptexten till 'Visa Lunchbuffé'
+    lunchBuffeSection.style.display = "none";
+    hideBtn.textContent = "Visa Lunchbuffé";
   } else {
     lunchBuffeSection.style.display = "block"; // Visar sektionen igen
-    hideBtn.textContent = "Dölj Lunchbuffé"; // Återställ knapptexten
+    hideBtn.textContent = "Dölj Lunchbuffé";
   }
 });
 
@@ -20,11 +20,9 @@ hideBtn.addEventListener("click", function () {
 //FILTRERING AV KATEGORI STARTS
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Först definierar vi filterSelect och menuCards
   const filterSelect = document.getElementById("category-filter");
   const menuCards = document.querySelectorAll(".menu-card");
 
-  // Lägg till eventlistener för när användaren väljer en kategori
   filterSelect.addEventListener("change", function () {
     const selectedCategory = filterSelect.value;
 
@@ -48,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuCards.forEach((card) => {
     card.addEventListener("click", function () {
-      card.classList.toggle("flipped"); // Lägg till/ta bort flipped-klassen vid klick
+      card.classList.toggle("flipped");
     });
   });
 });
