@@ -152,29 +152,28 @@ button:hover {
 @media screen and (max-width: 540px) {
   #nav-links {
     gap: 10px;
-    margin-right: 467px;
+    margin-right: 7px;
   }
-  .link,
-  .under-title-footer {
+  .link {
     font-size: 18px;
-  }
-  .header-text {
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    color: #eec16c;
-    font-size: 15px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
   }
   .logo img {
     display: none;
   }
-  .title-footer {
-    color: #eec16c;
-    font-size: 20px;
-  }
-  .info-footer {
-    font-size: 13px;
-  }
+}
+.header-text {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: #eec16c;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.title-footer {
+  color: #eec16c;
+  font-size: 20px;
+}
+.info-footer {
+  font-size: 13px;
 }

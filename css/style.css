@@ -295,3 +295,16 @@ main {
     top: 95%;
   }
 }
+
+@media screen and (max-width: 540px) {
+  #nav-links {
+    gap: 10px;
+    margin-right: 7px;
+  }
+  .link {
+    font-size: 18px;
+  }
+  .logo img {
+    display: none;
+  }
+}
