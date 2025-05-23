@@ -1,7 +1,7 @@
 # BopBurger Restaurang
 
 ## Beskrivning
-Detta är en intreaktiv webbplast för en restaurang byggd med HTML, CSS och JavaScript.
+Detta är ett skolprojekt med fokus på Html,Css,Javascript. Syftet är att skapa en intreaktiv webbplast för en restaurang.
 
 ## Struktur
 - `index.html`: Huvudsidan för webbplatsen
